@@ -16,6 +16,7 @@
 
 .nav2 {
 	position: sticky;
+	top: 0;
 	overflow: hidden;
 }
 .nav2 a{
