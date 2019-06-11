@@ -158,6 +158,9 @@ footer{
       display: block;
       font-size: 60%;
 }
+.sorry{
+	width: 60%;
+}
 
 }
 
@@ -192,6 +195,6 @@ footer{
 	width: 100%;
 }
 .sorry{
-	width: 60%;
+	width: 100%;
 }
 }
