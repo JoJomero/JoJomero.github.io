@@ -15,7 +15,7 @@
 }
 
 .nav2 {
-	z-index: inherit;
+	z-index: 1;
 	position: sticky;
 	top: 0;
 	overflow: hidden;
