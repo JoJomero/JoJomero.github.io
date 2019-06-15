@@ -1,7 +1,9 @@
 .bodycolor {
 	background: #181818;
 }
-
+body {
+	font-family: fantasy;
+}
 @keyframes  nav2{
 	0% {background-color: #232829; opacity: 0;}
 	100% {background-color: #232829; opacity: 1;}
@@ -219,8 +221,11 @@ footer{
 .text1 h1{
 	font-size: 5vw;
 }
+.text2 {
+	line-height: 12pt;
+}
 .text2 p1{
-	font-size: 3.5vw;
+	font-size: 13px;
 }
 #img2 {
 	width: 50%;
