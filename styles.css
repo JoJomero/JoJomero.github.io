@@ -60,6 +60,9 @@ body {
 	margin-bottom: 5%;
 	margin-right: 25%;
 }
+.contenidosmovil {
+	display: none;
+}
 /*seccion*/
 
 /*VIDEO*/
@@ -214,10 +217,16 @@ footer{
 	background-color: #6f706f;
 	margin-top:15%;
 	margin-left: 0%;
+	margin-bottom: 0%;
 }
 .contenidos {
 	display: none;
 }
+.contenidosmovil {
+	background-color: #6f706f;
+	display: block;
+}
+
 .text1 h1{
 	font-size: 5vw;
 }
