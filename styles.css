@@ -1,6 +1,15 @@
 .bodycolor {
 	background: #181818;
 }
+
+@keyframes  nav2{
+	0% {background-color: #232829; opacity: 0;}
+	100% {background-color: #232829; opacity: 1;}
+	}
+@keyframes text1{
+	0% {background-color: #3f5d66;}
+	100% {background-color: #62909E;}
+}
 /*NAV*/
 .navbar{
 	background-color: #232829;
@@ -24,7 +33,9 @@
   display: block;
 }
 .nav2 a:hover {
-	background-color: #232829;
+	animation-name: nav2;
+	animation-duration: 500ms;
+	animation-fill-mode: forwards;
 	border-radius: 25px;
 }
 #navmobile{
@@ -82,8 +93,15 @@
 	width: 15%;
 }
 
-.text1{
+.text1 {
 	background-color: #3f5d66;
+
+}
+.text1:hover{
+	animation-name: text1;
+	animation-duration: 500ms;
+	animation-fill-mode: forwards;
+	cursor: pointer;
 }
 .text1 h1{
 	font-size: 1.5vw;
