@@ -184,7 +184,33 @@ footer{
 }
 /*Footer*/
 
+/*BIOGRAFIA*/
+#bio {
+	padding: 1%;
+	width: 100%;
+}
+#bio img {
 
+	width: 100%;
+	border: solid 5px #6ab3b4;
+}
+.text3 {
+	background-color: #CCCCCC;
+	padding: 1%;
+}
+.text4 {
+	background-color: #CCCCCC;
+	padding: 1%;
+}
+#bio2 {
+	padding: 1%;
+}
+#bio2 img{
+	margin: 2%;
+	float: left;
+	border: solid 5px #6ab3b4;
+}
+/*BIOGRAFIA*/
 
 @media(max-width: 810px){
 	/* NAV 2*/
@@ -259,5 +285,9 @@ footer{
 	width: 100%;
 }
 
-
+#bio2 img{
+	margin: 0%;
+	float: none;
+	width: 100%;
+}
 }
