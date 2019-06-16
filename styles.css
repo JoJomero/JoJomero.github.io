@@ -123,7 +123,15 @@ body {
 h1{
 	margin-left: 1%;	
 }
-
+.flecha1 {
+	width: 100%;
+}
+.flecha1 img{
+	padding-top: 2%;
+	padding-right: 1%;
+	float: right;
+	width: 6%;
+}
 
 #img1 {
 	padding: 1.5%;
@@ -210,6 +218,10 @@ footer{
     #vid1 {
 	    padding: 1%;
 	    width: 100%;
+}
+.flecha1 img{
+	padding-top: 3%;
+	padding-right: 0%;
 }
 
 .section{
