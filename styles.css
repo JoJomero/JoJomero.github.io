@@ -197,10 +197,12 @@ footer{
 .text3 {
 	background-color: #CCCCCC;
 	padding: 1%;
+	font-size: 1vw;
 }
 .text4 {
 	background-color: #CCCCCC;
 	padding: 1%;
+	font-size: 1vw;
 }
 #bio2 {
 	padding: 1%;
@@ -284,10 +286,20 @@ footer{
 .sorry{
 	width: 100%;
 }
-
+/*BIOMOVIL*/
 #bio2 img{
 	margin: 0%;
 	float: none;
 	width: 100%;
+}
+.text3 {
+	background-color: #CCCCCC;
+	padding: 1%;
+	font-size: 4vw;
+}
+.text4 {
+	background-color: #CCCCCC;
+	padding: 1%;
+	font-size: 4vw;
 }
 }
