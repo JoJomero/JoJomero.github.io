@@ -4,6 +4,18 @@
 body {
 	font-family: fantasy;
 }
+@keyframes p1 {
+	0%{background: #181818;opacity: 0; top:50px;}
+	100%{opacity: 1; top: 0;}
+}
+@keyframes p2 {
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+@keyframes p3 {
+	0%{opacity: 0; right: 50px;position: relative;}
+	100%{opacity: 1;right: 0;position: relative;}
+}
 @keyframes  nav2{
 	0% {background-color: #232829; opacity: 0;}
 	100% {background-color: #232829; opacity: 1;}
@@ -14,10 +26,12 @@ body {
 }
 /*NAV*/
 .navbar{
+	animation-name: p1;
+	animation-duration:2s;
 	background-color: #232829;
-	border-bottom: solid #6ab3b4;
 }
 .nav{
+	border-top: solid #6ab3b4;
 	background-color: #3f5d66;
 	padding: 0.5%;
 }
@@ -31,8 +45,10 @@ body {
 	top: 0;
 	overflow: hidden;
 }
-.nav2 a{
-  display: block;
+.nav2 a{ 
+	animation-name: p2;
+    animation-duration:2s;
+    display: block;
 }
 .nav2 a:hover {
 	animation-name: nav2;
@@ -134,6 +150,8 @@ h1{
 }
 
 #img1 {
+	animation-name: p2;
+    animation-duration:2s;
 	padding: 1.5%;
 	width: 100%;
 }
@@ -143,6 +161,8 @@ h1{
 }
 
 #img2 {
+	animation-name: p2;
+    animation-duration:2s;
 	padding: 1%;
 	padding-bottom: -2%; 
 	padding-left: 1%;
@@ -155,6 +175,8 @@ h1{
 
 
 #slider {
+	animation-name: p2;
+    animation-duration:2s;
 	padding: 1.5%;
 }
 .sorry {
@@ -190,7 +212,12 @@ footer{
 	width: 100%;
 }
 #bio img {
-
+	opacity: 0;
+	animation-name: p3;
+	animation-fill-mode: forwards;
+    animation-duration:1s;
+    animation-delay: 300ms;
+    animation-timing-function: linear;
 	width: 100%;
 	border: solid 5px #6ab3b4;
 }
@@ -208,6 +235,12 @@ footer{
 	padding: 1%;
 }
 #bio2 img{
+	opacity: 0;
+	animation-name: p3;
+	animation-fill-mode: forwards;
+    animation-duration:1s;
+    animation-delay: 700ms;
+    animation-timing-function: linear;
 	margin: 2%;
 	float: left;
 	border: solid 5px #6ab3b4;
@@ -227,9 +260,8 @@ footer{
 }
 
 @media(max-width: 630px){
-    .navbar {
-    	border: none;
-    	background: transparent;
+    .navbar a {
+    	display: none;
 }
 	.nav2 {
 	    display: none;
