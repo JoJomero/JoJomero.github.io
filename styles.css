@@ -1,12 +1,15 @@
-.bodycolor {
-	background: #181818;
-}
+
 body {
+	margin: 0;
+	background: url(img/fondo2.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: bottom ;
 	font-family: fantasy;
 }
 @keyframes p1 {
-	0%{background: #181818;opacity: 0; top:50px;}
-	100%{opacity: 1; top: 0;}
+	0%{background: #181818;opacity: 0; bottom:50px;}
+	100%{opacity: 1; bottom: 0;}
 }
 @keyframes p2 {
 	0%{opacity: 0;}
@@ -27,7 +30,8 @@ body {
 /*NAV*/
 .navbar{
 	animation-name: p1;
-	animation-duration:2s;
+	animation-duration:1s;
+	animation-timing-function: linear;
 	background-color: #232829;
 }
 .nav{
@@ -64,6 +68,7 @@ body {
 /*seccion*/
 .section{
 	width: 40%;
+	max-height: 100%;
 	background-color: #6f706f;
 	margin-top:15%;
 	margin-bottom: 5%; 
@@ -100,20 +105,11 @@ body {
 	top: 0;
 	width: 100%;
 }
+
+
 /*VIDEO*/
 
 /*IMAGENES*/
-.uno{
-	position: fixed;
-	right: 0;
-	bottom: 0;
-}
-.uno img{
-	margin-right: 5%;
-	float: right;
-	width: 15%;
-}
-
 .text1 {
 	background-color: #3f5d66;
 
@@ -123,6 +119,18 @@ body {
 	animation-duration: 500ms;
 	animation-fill-mode: forwards;
 	cursor: pointer;
+}
+.flecha1 {
+	width: 100%;
+}
+.flecha1 img{
+	padding-top: 2%;
+	padding-right: 1%;
+	float: right;
+	width: 6%;
+}
+.flecha1 img:hover {
+	transform: rotate(360deg); 
 }
 .text1 h1{
 	font-size: 1.5vw;
@@ -139,15 +147,7 @@ body {
 h1{
 	margin-left: 1%;	
 }
-.flecha1 {
-	width: 100%;
-}
-.flecha1 img{
-	padding-top: 2%;
-	padding-right: 1%;
-	float: right;
-	width: 6%;
-}
+
 
 #img1 {
 	animation-name: p2;
@@ -188,6 +188,7 @@ h1{
 
 /*Footer*/
 footer{
+	position: absolute;
 	width: 100%;
 	background: #232829;
 }
