@@ -312,12 +312,14 @@ footer{
 }
 #logo1{
 	position: absolute;
+	top: 0;
 	right: 0;
 	width: 7vw;
 	margin: 2%;
 }
 #logo2{
 	position: absolute;
+	top: 0;
 	left: 0;
 	width: 15vw;
 	margin: 1%;
@@ -466,17 +468,21 @@ display: none;
 }
 
 /*FOOTER*/
+footer {
+	height: 30vw;
+}
 #logo1{
-	width: 10%;
+	top: 0;
+	width: 20%;
 	margin: 2%;
 }
 #logo2{
-	width: 30vw;
+	top: 0;
+	width: 40vw;
 	margin: 1%;
 }
 .textf {
 	color: white;
-	margin-top: 7vw;
 	position: absolute;
 
 }
