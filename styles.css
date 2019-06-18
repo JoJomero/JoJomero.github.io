@@ -382,6 +382,11 @@ display: none;
 }
 
 /*Series y Peliculas*/
+#series h1 {
+	color: white; 
+	text-align: center; 
+	background:#232829; 
+	margin: 0;}
 #section_sp1 {
 	display: none;
 }
@@ -393,6 +398,9 @@ display: none;
 	margin-top:15%;
 	margin-bottom: 0%; 
 	margin-left: 0%;
+}
+#links {
+	opacity: 1;
 }
 
 }
