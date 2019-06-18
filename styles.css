@@ -78,13 +78,13 @@ body {
 .section{
 	width: 40%;
 	max-height: 100%;
-	background-color: #6f706f;
+	background-color: #3E3E3E;
 	margin-bottom: 5%; 
 	margin-left: 15%;
 }
 .contenidos {
 	width: 20%;
-	background-color: #6f706f;
+	background-color: #3E3E3E;
 	margin-bottom: 5%;
 	margin-right: 25%;
 }
@@ -230,13 +230,36 @@ h1{
 	border: solid 5px #6ab3b4;
 }
 
-/*PERSONAJES*/
-.section_p {
+/*Series y Peliculas*/
+.section_sp1 {
 	width: 60%;
 	max-height: 100%;
-	background-color: #6f706f;
+	background-color: #3E3E3E;
 	margin-bottom: 5%; 
 	margin-left: 15%;
+}
+.section_sp2 {
+	display: none;
+}
+#links {
+	opacity: 0.2;
+}
+
+#series img{
+	width: 100%;
+}
+#links:hover{
+	transition: opacity 1s;
+	opacity: 1;
+	cursor: pointer;
+}
+.texts{
+	width: 100%;
+	background-color: #CCCCCC;
+	border-top: solid 5px #6ab3b4;
+}
+.texts h1{
+	font-size: 2vw;
 }
 
 /*Footer*/
@@ -299,7 +322,7 @@ display: none;
 }
 .section{
 	width: 100%;
-	background-color: #6f706f;
+	background-color: #3E3E3E;
 	margin-top:15%;
 	margin-left: 0%;
 	margin-bottom: 0%;
@@ -308,7 +331,7 @@ display: none;
 	display: none;
 }
 .contenidosmovil {
-	background-color: #6f706f;
+	background-color: #3E3E3E;
 	display: block;
 }
 
@@ -357,4 +380,19 @@ display: none;
 	padding: 1%;
 	font-size: 4vw;
 }
+
+/*Series y Peliculas*/
+.section_sp1 {
+	display: none;
+}
+.section_sp2 {
+	display: block;
+	width: 100%;
+	max-height: 100%;
+	background-color: #3E3E3E;
+	margin-top:15%;
+	margin-bottom: 0%; 
+	margin-left: 0%;
+}
+
 }
