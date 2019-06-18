@@ -7,6 +7,12 @@ body {
 	background-position: bottom ;
 	font-family: fantasy;
 }
+#fondo {
+	z-index: -5;
+	position: absolute;
+	width: 40vw;
+	top: 10%;
+}
 @keyframes p1 {
 	0%{background: #181818;opacity: 0; bottom:50px;}
 	100%{opacity: 1; bottom: 0;}
@@ -70,19 +76,27 @@ body {
 	width: 40%;
 	max-height: 100%;
 	background-color: #6f706f;
-	margin-top:15%;
 	margin-bottom: 5%; 
 	margin-left: 15%;
 }
 .contenidos {
 	width: 20%;
 	background-color: #6f706f;
-	margin-top:15%;
 	margin-bottom: 5%;
 	margin-right: 25%;
 }
 .contenidosmovil {
 	display: none;
+}
+#pp1 {
+	z-index: 1;
+	width:15%;
+	margin-top: 2%;
+	position: relative;
+	left: 23vw;
+	top: 0.5vw;
+	animation-name: p2;
+    animation-duration:2s;
 }
 /*seccion*/
 
@@ -275,8 +289,13 @@ footer{
     	background: #3f5d66;
     	border-top: solid #6ab3b4;
 }
-
-    #vid1 {
+#pp1 {
+	display: none;
+}
+#fondo{ 
+display: none;
+}
+#vid1 {
 	    padding: 1%;
 	    width: 100%;
 }
