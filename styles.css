@@ -316,6 +316,11 @@ footer{
 	width: 15vw;
 	margin: 1%;
 }
+.textf {
+	color: white;
+	margin-top: 7vw;
+	
+}
 /*MEDIA 810px*/
 
 @media(max-width: 810px){
@@ -462,5 +467,11 @@ display: none;
 #logo2{
 	width: 30vw;
 	margin: 1%;
+}
+.textf {
+	color: white;
+	margin-top: 7vw;
+	position: absolute;
+
 }
 }
