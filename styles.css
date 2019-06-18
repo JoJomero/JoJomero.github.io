@@ -459,7 +459,11 @@ display: none;
 	margin-left: 0%;
 	opacity: 1;
 }
+#pers {
+	padding: 1%;
+	width: 100%;
+}
 .textp h1{
-	font-size: 4vw;
+	font-size: 3vw;
 }
 }
