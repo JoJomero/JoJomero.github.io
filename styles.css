@@ -284,8 +284,6 @@ h1{
 	float: left;
 	border: solid 5px #6ab3b4;
 }
-
-
 #pers {
 	padding: 1%;
 	width: 30%;
@@ -310,6 +308,7 @@ h1{
 .textp h1{
 	font-size: 1.5vw;
 }
+
 /*Footer*/
 footer{
 	position: absolute;
@@ -459,5 +458,8 @@ display: none;
 	margin-bottom: 0%; 
 	margin-left: 0%;
 	opacity: 1;
+}
+.textp h1{
+	font-size: 2vw;
 }
 }
