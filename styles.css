@@ -1,12 +1,46 @@
-.bodycolor {
-	background: #181818;
+
+body {
+	margin: 0;
+	background: url(img/fondo2.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: bottom ;
+	font-family: fantasy;
 }
+#fondo {
+	z-index: -5;
+	position: absolute;
+	width: 35vw;
+	top: 10%;
+}
+
+/*ANIMACIONES*/
+@keyframes p1 {
+	0%{background: #181818;opacity: 0; bottom:50px;}
+	100%{opacity: 1; bottom: 0;}
+}
+@keyframes p2 {
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+@keyframes p3 {
+	0%{opacity: 0; right: 50px;position: relative;}
+	100%{opacity: 1;right: 0;position: relative;}
+}
+@keyframes text1{
+	0% {background-color: #3f5d66;}
+	100% {background-color: #62909E;}
+}
+
 /*NAV*/
 .navbar{
+	animation-name: p1;
+	animation-duration:1s;
+	animation-timing-function: linear;
 	background-color: #232829;
-	border-bottom: solid #6ab3b4;
 }
 .nav{
+	border-top: solid #6ab3b4;
 	background-color: #3f5d66;
 	padding: 0.5%;
 }
@@ -15,14 +49,18 @@
 }
 
 .nav2 {
+	z-index: 10;
 	position: sticky;
 	top: 0;
 	overflow: hidden;
 }
-.nav2 a{
-  display: block;
+.nav2 a{ 
+	animation-name: p2;
+    animation-duration:2s;
+    display: block;
 }
 .nav2 a:hover {
+	transition: 1s;
 	background-color: #232829;
 	border-radius: 25px;
 }
@@ -34,17 +72,29 @@
 /*seccion*/
 .section{
 	width: 40%;
-	background-color: #6f706f;
-	margin-top:15%;
+	max-height: 100%;
+	background-color: #3E3E3E;
 	margin-bottom: 5%; 
 	margin-left: 15%;
 }
 .contenidos {
 	width: 20%;
-	background-color: #6f706f;
-	margin-top:15%;
+	background-color: #3E3E3E;
 	margin-bottom: 5%;
 	margin-right: 25%;
+}
+.contenidosmovil {
+	display: none;
+}
+#pp1 {
+	z-index: 1;
+	width:15%;
+	margin-top: 2%;
+	position: relative;
+	left: 23vw;
+	top: 0.5vw;
+	animation-name: p2;
+    animation-duration:2s;
 }
 /*seccion*/
 
@@ -69,21 +119,27 @@
 }
 /*VIDEO*/
 
-/*IMAGENES*/
-.uno{
-	position: fixed;
-	right: 0;
-	bottom: 0;
+/*IMAGENES y TEXTO*/
+.text1 {
+	background-color: #3f5d66;
+
 }
-.uno img{
-	margin-right: 5%;
+.text1:hover{
+	animation-name: text1;
+	animation-duration: 500ms;
+	animation-fill-mode: forwards;
+	cursor: pointer;
+}
+.flecha1 {
+	width: 100%;
+}
+.flecha1 img{
+	padding-top: 2%;
+	padding-right: 1%;
 	float: right;
-	width: 15%;
+	width: 6%;
 }
 
-.text1{
-	background-color: #3f5d66;
-}
 .text1 h1{
 	font-size: 1.5vw;
 	color: white;
@@ -93,12 +149,15 @@
 	background-color: #CCCCCC;
 	padding: 1%;
 }
+.text2 p1{
+	font-size: 1vw;
+}
 h1{
 	margin-left: 1%;	
 }
-
-
 #img1 {
+	animation-name: p2;
+    animation-duration:2s;
 	padding: 1.5%;
 	width: 100%;
 }
@@ -106,8 +165,9 @@ h1{
 	border-bottom: solid 5px #6ab3b4;
 	width: 100%;
 }
-
 #img2 {
+	animation-name: p2;
+    animation-duration:2s;
 	padding: 1%;
 	padding-bottom: -2%; 
 	padding-left: 1%;
@@ -117,37 +177,159 @@ h1{
 	border-bottom: solid 5px #6ab3b4;
 	width: 100%;
 }
-
-
 #slider {
+	animation-name: p2;
+    animation-duration:2s;
 	padding: 1.5%;
 }
-.sorry {
+#img3 {
+	width: 20%;
+}
+/*BIOGRAFIA*/
+#bio {
+	padding: 1%;
+	width: 100%;
+}
+#bio img {
+	opacity: 0;
+	animation-name: p3;
+	animation-fill-mode: forwards;
+    animation-duration:1s;
+    animation-delay: 300ms;
+    animation-timing-function: linear;
+	width: 100%;
+	border: solid 5px #6ab3b4;
+}
+.text3 {
+	background-color: #CCCCCC;
+	padding: 1%;
+	font-size: 0.9vw;
+}
+.text4 {
+	background-color: #CCCCCC;
+	padding: 1%;
+	font-size: 0.85vw;
+}
+#bio2 {
+	padding: 1%;
+}
+#bio2 img{
+	opacity: 0;
+	animation-name: p3;
+	animation-fill-mode: forwards;
+    animation-duration:1s;
+    animation-delay: 700ms;
+    animation-timing-function: linear;
+	margin: 2%;
+	float: left;
+	border: solid 5px #6ab3b4;
+}
+
+/*Series y Peliculas*/
+#section_sp1 {
+	width: 60%;
+	max-height: 100%;
+	background-color: #3E3E3E;
+	margin-bottom: 5%; 
+	margin-left: 15%;
+}
+.section_sp2 {
+	display: none;
+}
+#links {
+	opacity: 0.2;
+}
+
+#series img{
+	width: 100%;
+}
+#links:hover{
+	transition: opacity 1s;
+	opacity: 1;
+	cursor: pointer;
+}
+.texts{
+	width: 100%;
+	background-color: #CCCCCC;
+	border-top: solid 5px #6ab3b4;
+}
+.texts h1{
+	font-size: 2vw;
+}
+
+/*Serie y Personajes*/
+#section_p1 {
+	width: 60%;
+	max-height: 100%;
+	background-color: #3E3E3E;
+	margin-bottom: 5%; 
+	margin-left: 15%;
+}
+#sp {
+	padding: 1%;
+}
+#sp img{
+	opacity: 0;
+	animation-name: p3;
+	animation-fill-mode: forwards;
+    animation-duration:1s;
+    animation-delay: 700ms;
+    animation-timing-function: linear;
+	margin: 2%;
+	float: left;
+	border: solid 5px #6ab3b4;
+}
+#pers {
+	padding: 1%;
 	width: 30%;
 }
-/*IMAGENES*/
+#pers img{
+    animation-timing-function: linear;
+	border: solid 5px #6ab3b4;
+	width: 100%;
+}
+#anip {
+	margin: 5%;
+	opacity: 0;
+	animation-name: p3;
+	animation-fill-mode: forwards;
+    animation-duration:1s;
+    animation-delay: 900ms;
+}
+.textp{
+	background-color: #CCCCCC;
+	padding: 1%;
+}
+.textp h1{
+	font-size: 1.5vw;
+}
 
 /*Footer*/
 footer{
 	width: 100%;
+	height: 10vw;
 	background: #232829;
 }
-#coments {
-	color: white;
-	width: 50%;
-	padding: 1%;
-	background: #232829;
+#logo1{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 7vw;
+	margin: 2%;
 }
-#botcom{
-	margin-top: 10px;
-	border: solid #181818;
-	background: #3f5d66 ;
-	color: white;
-	border-radius: 10px;
+#logo2{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 15vw;
+	margin: 1%;
 }
-/*Footer*/
-
-
+.textf {
+	color: white;
+	margin-top: 7vw;
+	
+}
+/*MEDIA 810px*/
 
 @media(max-width: 810px){
 	/* NAV 2*/
@@ -155,13 +337,19 @@ footer{
       display: block;
       font-size: 60%;
 }
-
 }
 
+/*MEDIA 630px*/
+
 @media(max-width: 630px){
-    .navbar {
-    	border: none;
-    	background: transparent;
+
+#fondo{ 
+display: none;
+}
+
+/*NAV*/
+    .navbar a {
+    	display: none;
 }
 	.nav2 {
 	    display: none;
@@ -175,17 +363,127 @@ footer{
     	border-top: solid #6ab3b4;
 }
 
-    #vid1 {
+/*SECTION*/
+#pp1 {
+	display: none;
+}
+.section{
+	width: 100%;
+	background-color: #3E3E3E;
+	margin-top:15%;
+	margin-left: 0%;
+	margin-bottom: 0%;
+}
+.contenidos {
+	display: none;
+}
+.contenidosmovil {
+	background-color: #3E3E3E;
+	display: block;
+}
+
+/*VIDEO*/
+#vid1 {
 	    padding: 1%;
 	    width: 100%;
 }
 
+/*IMAGENES y TEXTO*/
+.flecha1 img{
+	padding-top: 3%;
+	padding-right: 0%;
+}
 
+.text1 h1{
+	font-size: 5vw;
+}
+.text2 {
+	line-height: 10pt;
+}
+.text2 p1{
+	font-size: 13px;
+}
 #img2 {
 	width: 50%;
 }
 
 #slider {
 	width: 100%;
+}
+
+/*BIOGRAFIA*/
+#bio2 img{
+	margin: 0%;
+	float: none;
+	width: 100%;
+}
+.text3 {
+	background-color: #CCCCCC;
+	padding: 1%;
+	font-size: 4vw;
+}
+.text4 {
+	background-color: #CCCCCC;
+	padding: 1%;
+	font-size: 4vw;
+}
+
+/*Series y Peliculas*/
+#series h1 {
+	color: white; 
+	text-align: center; 
+	background:#232829; 
+	margin: 0;}
+#section_sp1 {
+	display: none;
+}
+.section_sp2 {
+	display: block;
+	width: 100%;
+	max-height: 100%;
+	background-color: #3E3E3E;
+	margin-top:15%;
+	margin-bottom: 0%; 
+	margin-left: 0%;
+	opacity: 1;
+}
+#links {
+	opacity: 1;
+}
+
+/*Series y Personajes*/
+#section_p1 {
+	width: 100%;
+	margin-top:15%;
+	margin-bottom: 0%; 
+	margin-left: 0%;
+	opacity: 1;
+}
+#pers {
+	padding: 1%;
+	width: 100%;
+}
+.textp h1{
+	font-size: 3vw;
+}
+
+/*FOOTER*/
+footer {
+	height: 30vw;
+}
+#logo1{
+	top: 0;
+	width: 20%;
+	margin: 2%;
+}
+#logo2{
+	top: 0;
+	width: 40vw;
+	margin: 1%;
+}
+.textf {
+	color: white;
+	position: absolute;
+
 }
 }

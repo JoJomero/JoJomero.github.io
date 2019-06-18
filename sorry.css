@@ -1,0 +1,19 @@
+
+.sorry {
+	display: block;
+	margin: auto;
+	width: 30%;
+}
+
+
+@media(max-width: 810px){
+.sorry{
+	width: 60%;
+}
+}
+
+@media(max-width: 630px){
+.sorry{
+	width: 100%;
+}
+}
