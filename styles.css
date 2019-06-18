@@ -13,6 +13,8 @@ body {
 	width: 40vw;
 	top: 10%;
 }
+
+/*ANIMACIONES*/
 @keyframes p1 {
 	0%{background: #181818;opacity: 0; bottom:50px;}
 	100%{opacity: 1; bottom: 0;}
@@ -33,6 +35,7 @@ body {
 	0% {background-color: #3f5d66;}
 	100% {background-color: #62909E;}
 }
+
 /*NAV*/
 .navbar{
 	animation-name: p1;
@@ -119,11 +122,9 @@ body {
 	top: 0;
 	width: 100%;
 }
-
-
 /*VIDEO*/
 
-/*IMAGENES*/
+/*IMAGENES y TEXTO*/
 .text1 {
 	background-color: #3f5d66;
 
@@ -161,8 +162,6 @@ body {
 h1{
 	margin-left: 1%;	
 }
-
-
 #img1 {
 	animation-name: p2;
     animation-duration:2s;
@@ -173,7 +172,6 @@ h1{
 	border-bottom: solid 5px #6ab3b4;
 	width: 100%;
 }
-
 #img2 {
 	animation-name: p2;
     animation-duration:2s;
@@ -186,40 +184,11 @@ h1{
 	border-bottom: solid 5px #6ab3b4;
 	width: 100%;
 }
-
-
 #slider {
 	animation-name: p2;
     animation-duration:2s;
 	padding: 1.5%;
 }
-.sorry {
-	display: block;
-	margin: auto;
-	width: 30%;
-}
-/*IMAGENES*/
-
-/*Footer*/
-footer{
-	position: absolute;
-	width: 100%;
-	background: #232829;
-}
-#coments {
-	color: white;
-	width: 50%;
-	padding: 1%;
-	background: #232829;
-}
-#botcom{
-	margin-top: 10px;
-	border: solid #181818;
-	background: #3f5d66 ;
-	color: white;
-	border-radius: 10px;
-}
-/*Footer*/
 
 /*BIOGRAFIA*/
 #bio {
@@ -260,7 +229,37 @@ footer{
 	float: left;
 	border: solid 5px #6ab3b4;
 }
-/*BIOGRAFIA*/
+
+/*PERSONAJES*/
+.section_p {
+	width: 60%;
+	max-height: 100%;
+	background-color: #6f706f;
+	margin-bottom: 5%; 
+	margin-left: 15%;
+}
+
+/*Footer*/
+footer{
+	position: absolute;
+	width: 100%;
+	background: #232829;
+}
+#coments {
+	color: white;
+	width: 50%;
+	padding: 1%;
+	background: #232829;
+}
+#botcom{
+	margin-top: 10px;
+	border: solid #181818;
+	background: #3f5d66 ;
+	color: white;
+	border-radius: 10px;
+}
+
+/*MEDIA 810px*/
 
 @media(max-width: 810px){
 	/* NAV 2*/
@@ -268,13 +267,17 @@ footer{
       display: block;
       font-size: 60%;
 }
-.sorry{
-	width: 60%;
 }
 
-}
+/*MEDIA 630px*/
 
 @media(max-width: 630px){
+
+#fondo{ 
+display: none;
+}
+
+/*NAV*/
     .navbar a {
     	display: none;
 }
@@ -289,21 +292,11 @@ footer{
     	background: #3f5d66;
     	border-top: solid #6ab3b4;
 }
+
+/*SECTION*/
 #pp1 {
 	display: none;
 }
-#fondo{ 
-display: none;
-}
-#vid1 {
-	    padding: 1%;
-	    width: 100%;
-}
-.flecha1 img{
-	padding-top: 3%;
-	padding-right: 0%;
-}
-
 .section{
 	width: 100%;
 	background-color: #6f706f;
@@ -317,6 +310,18 @@ display: none;
 .contenidosmovil {
 	background-color: #6f706f;
 	display: block;
+}
+
+/*VIDEO*/
+#vid1 {
+	    padding: 1%;
+	    width: 100%;
+}
+
+/*IMAGENES y TEXTO*/
+.flecha1 img{
+	padding-top: 3%;
+	padding-right: 0%;
 }
 
 .text1 h1{
@@ -335,10 +340,8 @@ display: none;
 #slider {
 	width: 100%;
 }
-.sorry{
-	width: 100%;
-}
-/*BIOMOVIL*/
+
+/*BIOGRAFIA*/
 #bio2 img{
 	margin: 0%;
 	float: none;
