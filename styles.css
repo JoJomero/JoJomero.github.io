@@ -27,10 +27,6 @@ body {
 	0%{opacity: 0; right: 50px;position: relative;}
 	100%{opacity: 1;right: 0;position: relative;}
 }
-@keyframes  nav2{
-	0% {background-color: #232829; opacity: 0;}
-	100% {background-color: #232829; opacity: 1;}
-	}
 @keyframes text1{
 	0% {background-color: #3f5d66;}
 	100% {background-color: #62909E;}
@@ -64,9 +60,8 @@ body {
     display: block;
 }
 .nav2 a:hover {
-	animation-name: nav2;
-	animation-duration: 500ms;
-	animation-fill-mode: forwards;
+	transition: 1s;
+	background-color: #232829;
 	border-radius: 25px;
 }
 #navmobile{
@@ -144,9 +139,7 @@ body {
 	float: right;
 	width: 6%;
 }
-.flecha1 img:hover {
-	transform: rotate(360deg); 
-}
+
 .text1 h1{
 	font-size: 1.5vw;
 	color: white;
@@ -315,20 +308,14 @@ footer{
 	width: 100%;
 	background: #232829;
 }
-#coments {
-	color: white;
-	width: 50%;
-	padding: 1%;
-	background: #232829;
+#logo1{
+	width: 5%;
+	margin: 2%;
 }
-#botcom{
-	margin-top: 10px;
-	border: solid #181818;
-	background: #3f5d66 ;
-	color: white;
-	border-radius: 10px;
+#logo2{
+	width: 15vw;
+	margin: 1%;
 }
-
 /*MEDIA 810px*/
 
 @media(max-width: 810px){
@@ -465,5 +452,15 @@ display: none;
 }
 .textp h1{
 	font-size: 3vw;
+}
+
+/*FOOTER*/
+#logo1{
+	width: 10%;
+	margin: 2%;
+}
+#logo2{
+	width: 30vw;
+	margin: 1%;
 }
 }
