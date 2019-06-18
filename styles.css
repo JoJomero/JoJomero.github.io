@@ -262,6 +262,54 @@ h1{
 	font-size: 2vw;
 }
 
+/*Serie y Personajes*/
+#section_p1 {
+	width: 60%;
+	max-height: 100%;
+	background-color: #3E3E3E;
+	margin-bottom: 5%; 
+	margin-left: 15%;
+}
+#sp {
+	padding: 1%;
+}
+#sp img{
+	opacity: 0;
+	animation-name: p3;
+	animation-fill-mode: forwards;
+    animation-duration:1s;
+    animation-delay: 700ms;
+    animation-timing-function: linear;
+	margin: 2%;
+	float: left;
+	border: solid 5px #6ab3b4;
+}
+
+
+#pers {
+	padding: 1%;
+	width: 30%;
+}
+#pers img{
+    animation-timing-function: linear;
+	border: solid 5px #6ab3b4;
+	width: 100%;
+}
+#anip {
+	margin: 5%;
+	opacity: 0;
+	animation-name: p3;
+	animation-fill-mode: forwards;
+    animation-duration:1s;
+    animation-delay: 900ms;
+}
+.textp{
+	background-color: #CCCCCC;
+	padding: 1%;
+}
+.textp h1{
+	font-size: 1.5vw;
+}
 /*Footer*/
 footer{
 	position: absolute;
@@ -404,4 +452,12 @@ display: none;
 	opacity: 1;
 }
 
+/*Series y Personajes*/
+#section_p1 {
+	width: 100%;
+	margin-top:15%;
+	margin-bottom: 0%; 
+	margin-left: 0%;
+	opacity: 1;
+}
 }
