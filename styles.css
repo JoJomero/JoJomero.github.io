@@ -304,6 +304,73 @@ h1{
 	font-size: 1.5vw;
 }
 
+/*Registro*/
+.sectionregis {	
+	width: 60%;
+	max-height: 100%;
+	background-color: #3E3E3E;
+	margin-bottom: 5%; 
+	margin-left: 15%;
+}
+.sectionregis h1{
+	color: white;
+	text-align: center;
+}
+.formr {
+	width: 98%;
+	max-width: 700px;
+	margin: auto;
+	margin-bottom: 5%;
+	background: white;
+}
+.formt {
+	background: #3f5d66;
+	color: white;
+	padding: 15px;
+	text-align: center;
+	font-size: 40px;
+	border-bottom: 5px solid  #6ab3b4;
+}
+.registro {
+	padding: 10px 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.sectionregis input {
+	padding: 15px;
+	margin-bottom: 25px;
+	border: solid  #6ab3b4;
+}
+.inp1 {
+	width: 100%;
+}
+.inp2 {
+	width: 48%;
+}
+.rbot {
+	background: #6ab3b4;
+	border-radius: 10px;
+	color: white;
+}
+.formrc {
+	background: #3f5d66;
+	color: white;
+	padding: 15px;
+	text-align: center;
+	font-size: 40px;
+	border-bottom: 5px solid  #6ab3b4;
+	margin-top: 5%;
+}
+.m1 {
+	width: 100%;
+	padding: 15px;
+	margin-bottom: 25px;
+	border: solid  #6ab3b4;
+	min-height: 10vh;
+	max-height: 20vh;
+}
+
 /*Footer*/
 footer{
 	width: 100%;
